@@ -44,7 +44,7 @@ skip
   end
 
   it "displays a contact us email link in the footer" do
-    skip
+
     mailto_link = page.find('html body footer a[href^=mailto]')
     mailto_link.text.wont_equal ''
   end
