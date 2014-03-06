@@ -17,6 +17,7 @@ describe "Landing page" do
   end
 
   it "displays two paragraphs of welcome text" do
+  skip
     welcome_text = page.all('html body main p')
     welcome_text.length.must_equal 2
 
@@ -37,6 +38,7 @@ describe "Landing page" do
 
   it "displays the restaurant address in the footer" do
     skip
+
     address = page.find('html body footer address')
     address.text.wont_equal ''
   end
