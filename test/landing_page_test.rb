@@ -50,6 +50,7 @@ skip
   end
 
   it "displays the copyright in the footer" do
+    skip
 
     footer = page.find('html body footer')
     footer.text.must_match /©/
