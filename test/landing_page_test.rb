@@ -17,7 +17,7 @@ describe "Landing page" do
   end
 
   it "displays two paragraphs of welcome text" do
-skip
+
     welcome_text = page.all('html body main p')
     welcome_text.length.must_equal 2
 
@@ -27,7 +27,7 @@ skip
   end
 
   it "displays a list of names for 5 dishes" do
-skip
+
     dishes = page.all('html body main ul li')
     dishes.length.must_equal 5
 
@@ -37,7 +37,7 @@ skip
   end
 
   it "displays the restaurant address in the footer" do
-skip
+
 
     address = page.find('html body footer address')
     address.text.wont_equal ''
@@ -51,14 +51,13 @@ skip
 
   it "displays the copyright in the footer" do
 
-skip
     footer = page.find('html body footer')
     footer.text.must_match /©/
     footer.text.must_include "2013"
   end
 
   it "displays an image of the restaurant" do
-skip
+
     image = page.find('html body main img')
     image[:src].wont_be_nil
     image[:src].must_match /images\//
