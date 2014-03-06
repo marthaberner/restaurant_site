@@ -37,7 +37,7 @@ skip
   end
 
   it "displays the restaurant address in the footer" do
-    skip
+skip
 
     address = page.find('html body footer address')
     address.text.wont_equal ''
@@ -50,7 +50,7 @@ skip
   end
 
   it "displays the copyright in the footer" do
-    skip
+
     footer = page.find('html body footer')
     footer.text.must_match /©/
     footer.text.must_include "2013"
