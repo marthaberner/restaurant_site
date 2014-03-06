@@ -37,7 +37,7 @@ skip
   end
 
   it "displays the restaurant address in the footer" do
-
+skip
 
     address = page.find('html body footer address')
     address.text.wont_equal ''
@@ -58,7 +58,7 @@ skip
   end
 
   it "displays an image of the restaurant" do
-
+skip
     image = page.find('html body main img')
     image[:src].wont_be_nil
     image[:src].must_match /images\//
